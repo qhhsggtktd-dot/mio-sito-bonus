@@ -9,45 +9,17 @@
     <style>
         :root { --primary: #0b57d0; --surface: #fdfbff; --text: #1f1f1f; }
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f4f7f9; color: var(--text); }
-        
-        /* HEADER RISTRUTTURATO CON LOGO */
         header { background: var(--primary); color: white; padding: 50px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .header-main-content {
-            display: flex;
-            align-items: center; /* Allineamento verticale centrale */
-            justify-content: space-between; /* Titolo a sinistra, logo a destra */
-            width: 100%;
-            max-width: 1200px; /* Consistente con il container principale */
-            margin: 0 auto; /* Centrare il contenitore flex stesso */
-        }
+        .header-main-content { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1200px; margin: 0 auto; }
         header h1 { margin: 0; font-size: 2.8rem; letter-spacing: -0.5px; text-align: left; }
-        .header-logo {
-            height: 80px; /* Dimensioni adeguate, proporzionale all'H1 */
-            width: auto;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-            margin-top: 25px;
-            font-weight: 300;
-            text-align: left;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* MEDIA QUERY PER MOBILE (HEADER) */
+        .header-logo { height: 80px; width: auto; background: white; border-radius: 8px; padding: 5px; } /* Aggiunto sfondo bianco nel caso il logo sia scuro */
+        header p { font-size: 1.2rem; opacity: 0.95; margin-top: 25px; font-weight: 300; text-align: left; max-width: 1200px; margin-left: auto; margin-right: auto; }
         @media (max-width: 768px) {
-            .header-main-content {
-                flex-direction: column; /* Impila titolo e logo verticalmente */
-                text-align: center;
-            }
+            .header-main-content { flex-direction: column; text-align: center; }
             header h1 { text-align: center; font-size: 2.2rem; margin-bottom: 20px; }
             .header-logo { height: 60px; margin-top: 0; }
             header p { text-align: center; margin-top: 30px; font-size: 1.1rem; }
         }
-
-        /* RESTO DEL LAYOUT A GRIGLIA CONFERMATO */
         .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
         .section-title { color: var(--primary); font-size: 2rem; border-bottom: 3px solid #d3e3fd; padding-bottom: 10px; margin-bottom: 30px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
@@ -67,7 +39,7 @@
     <header>
         <div class="header-main-content">
             <h1>Bonus Facile Italia 2026</h1>
-            <img src="image_0.png" alt="Logo Bonus Facile Italia" class="header-logo">
+            <img src="unnamed-2.jpg" alt="Logo Bonus Facile Italia" class="header-logo">
         </div>
         <p>Il tuo portale indipendente per navigare tra agevolazioni, bandi INPS e diritti inespressi.</p>
     </header>
